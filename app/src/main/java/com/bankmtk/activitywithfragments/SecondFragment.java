@@ -21,6 +21,7 @@ public class SecondFragment extends Fragment {
         textShape.setText(shape);
         return fragmentView;
     }
+
     public void setShape(String shape){
         this.shape = shape;
     }
