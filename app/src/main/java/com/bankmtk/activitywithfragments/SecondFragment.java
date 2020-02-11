@@ -16,10 +16,10 @@ public class SecondFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View fragmenView = inflater.inflate(R.layout.fragment_second, container, false);
-        TextView textShape = fragmenView.findViewById(R.id.textShape);
+        View fragmentView = inflater.inflate(R.layout.fragment_second, container, false);
+        TextView textShape = fragmentView.findViewById(R.id.textShape);
         textShape.setText(shape);
-        return fragmenView;
+        return fragmentView;
     }
     public void setShape(String shape){
         this.shape = shape;
