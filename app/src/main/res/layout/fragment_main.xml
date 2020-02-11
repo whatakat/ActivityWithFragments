@@ -17,7 +17,16 @@
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        android:src="@drawable/"/>
+        android:src="@drawable/lion"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/forward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="150dp"
@@ -25,6 +34,19 @@
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintBottom_toBottomOf="@+id/button">
+        <RadioButton
+            android:id="@+id/radioLion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/lion"/>
+        <RadioButton
+            android:id="@+id/radioShark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/shark"/>
 
     </RadioGroup>
 
